@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riya Sharma — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <span class="logo">RS<span class="dot">.</span></span>
+  <nav id="mainNav">
+    <a href="#work">work</a>
+    <a href="#about">about</a>
+    <a href="#experience">experience</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-kicker">01 — full stack developer</p>
+    <h1 class="hero-title">Riya builds<br>software that<br><em>holds together.</em></h1>
+    <p class="hero-sub">I design and ship web applications end to end — from React interfaces down to the database schema underneath them. Based in Indore, working with teams everywhere.</p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary">See the work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- SKILLS / ABOUT -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>About</h2>
+        <p>I'm a full stack developer who likes the whole stack — not just the part that's visible. I've spent the last few years building products with JavaScript on the front end and Node or Python on the back, backed by relational databases and deployed properly, not just running on my laptop.</p>
+        <p>Outside of client work, I read about distributed systems and lose small amounts of time to competitive typing tests.</p>
+      </div>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul>
+            <li><span>HTML / CSS / JS</span><i style="--fill:92%"></i></li>
+            <li><span>React</span><i style="--fill:85%"></i></li>
+            <li><span>Responsive Design</span><i style="--fill:90%"></i></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul>
+            <li><span>Node.js / Express</span><i style="--fill:88%"></i></li>
+            <li><span>REST APIs</span><i style="--fill:90%"></i></li>
+            <li><span>Authentication</span><i style="--fill:78%"></i></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data & Tools</h3>
+          <ul>
+            <li><span>SQL / SQLite / MongoDB</span><i style="--fill:80%"></i></li>
+            <li><span>Git & GitHub</span><i style="--fill:90%"></i></li>
+            <li><span>Docker (basics)</span><i style="--fill:60%"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="work" id="work">
+    <h2>Selected work</h2>
+    <div class="project-list">
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Task Management App</h3>
+          <span class="project-tag">full stack</span>
+        </div>
+        <p>A task manager with a Node/Express API and SQLite storage — create, update, complete, and organize tasks from a responsive front end.</p>
+        <p class="project-stack">React · Express · SQLite</p>
+        <a href="#" class="project-link">View on GitHub →</a>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Student Course Portal</h3>
+          <span class="project-tag">full stack</span>
+        </div>
+        <p>A course management portal for browsing courses, viewing details, and handling enrollment, backed by a REST API and relational data.</p>
+        <p class="project-stack">JavaScript · Express · SQLite</p>
+        <a href="#" class="project-link">View on GitHub →</a>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>This Portfolio</h3>
+          <span class="project-tag">frontend</span>
+        </div>
+        <p>The site you're looking at — hand-built with plain HTML, CSS and JavaScript, no framework, fully responsive from mobile to desktop.</p>
+        <p class="project-stack">HTML · CSS · JavaScript</p>
+        <a href="#" class="project-link">View on GitHub →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / EDUCATION TIMELINE -->
+  <section class="experience" id="experience">
+    <h2>Experience & education</h2>
+    <ol class="timeline">
+      <li>
+        <span class="timeline-year">2026</span>
+        <div class="timeline-body">
+          <h3>Full Stack Development Intern — QSkill</h3>
+          <p>Built and shipped full stack applications covering frontend interfaces, REST APIs, and database-backed features.</p>
+        </div>
+      </li>
+      <li>
+        <span class="timeline-year">2023 – 2026</span>
+        <div class="timeline-body">
+          <h3>B.Tech, Computer Science</h3>
+          <p>Coursework in data structures, databases, and web development. Built several course projects end to end.</p>
+        </div>
+      </li>
+      <li>
+        <span class="timeline-year">2022</span>
+        <div class="timeline-body">
+          <h3>Started learning web development</h3>
+          <p>Self-taught HTML, CSS and JavaScript before moving into backend and full stack work.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Let's talk</h2>
+    <p class="contact-sub">Have a project or an opportunity in mind? Send a note below.</p>
+    <form id="contactForm" novalidate>
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+        <span class="error" id="nameError"></span>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+        <span class="error" id="emailError"></span>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="What are you building?"></textarea>
+        <span class="error" id="messageError"></span>
+      </div>
+      <button type="submit" class="btn btn-primary">Send message</button>
+      <p class="form-success" id="formSuccess"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Designed & built by Riya Sharma.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
